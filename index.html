@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Enhanced SIP Calculator</title>
+</head>
+<body>
+    <div id="calculator">
+        <label for="calculationType">Calculation Type:</label>
+        <select id="calculationType">
+            <option value="sip">SIP (Systematic Investment Plan)</option>
+            <option value="compound">Compound Interest</option>
+            <option value="simple">Simple Interest</option>
+        </select>
+
+        <label for="amount">Investment Amount:</label>
+        <input type="number" id="amount" placeholder="Enter amount" required>
+
+        <label for="frequency">Frequency (in months for SIP):</label>
+        <input type="number" id="frequency" placeholder="Enter frequency" required>
+
+        <label for="return">Expected Annual Return (%):</label>
+        <input type="number" id="return" placeholder="Enter annual return" required>
+
+        <label for="duration">Investment Duration (in years):</label>
+        <input type="number" id="duration" placeholder="Enter duration" required>
+
+        <label for="inflation">Inflation Rate (%):</label>
+        <input type="number" id="inflation" placeholder="Enter inflation rate" required>
+
+        <button onclick="calculate()">Calculate</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
+
